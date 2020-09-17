@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:id="@+id/alert_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAbout"
+        android:textSize="20sp"
+        android:paddingBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/alert_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAbout"
+        android:paddingBottom="10dp"
+        android:textSize="15sp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_positive_btn"
+            style="@android:style/Widget.Button"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="موافق"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/dialog_negative_btn"
+            style="@android:style/Widget.Button"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@android:color/transparent"
+            android:text="إلغاء"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

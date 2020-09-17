@@ -1,0 +1,294 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="NavigationViewStyle">
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:textSize">18sp</item> <!-- menu item text size-->
+        <item name="android:listPreferredItemHeightSmall">55dp</item><!-- menu item height-->
+    </style>
+
+    <style name="DialogTheme">
+        <item name="android:windowEnterAnimation">@anim/slide_left</item>
+        <item name="android:windowExitAnimation">@anim/slide_right</item>
+    </style>
+
+    <style name="button_blue" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@drawable/round_button_blue</item>
+    </style>
+
+    <style name="button_green" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@drawable/round_button_green</item>
+    </style>
+
+    <style name="button_orange" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_orange</item>
+    </style>
+
+    <style name="button_red" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_red</item>
+    </style>
+
+    <style name="button_grey" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_grey</item>
+    </style>
+
+    <style name="button_black" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_black</item>
+    </style>
+
+    <style name="button_pink" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_pink</item>
+    </style>
+
+    <style name="button_darkpink" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_darkpink</item>
+    </style>
+
+    <style name="button_violet" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_violet</item>
+    </style>
+
+    <style name="button_skyblue" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_skyblue</item>
+    </style>
+
+    <style name="button_brown" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_brown</item>
+    </style>
+
+    <style name="button_bluegrey" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_bluegrey</item>
+    </style>
+
+    <style name="button_lightgreen" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_lightgreen</item>
+    </style>
+
+    <style name="button_lime" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_lime</item>
+    </style>
+
+    <style name="button_amber" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_amber</item>
+    </style>
+
+    <style name="button_cyan" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_cyan</item>
+    </style>
+
+    <style name="button_deeporange" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_deeporange</item>
+    </style>
+
+    <style name="button_teal" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_teal</item>
+    </style>
+
+    <style name="button_yellow" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_yellow</item>
+    </style>
+
+    <style name="button_indigo" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/round_button_indigo</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_blue</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_black" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_black</item>
+        <item name="colorPrimary">@color/black_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/black_colorPrimaryDark</item>
+        <item name="colorAccent">@color/black_colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_red" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_red</item>
+        <item name="colorPrimary">@color/red_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/red_colorPrimaryDark</item>
+        <item name="colorAccent">@color/red_colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_pink" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_pink</item>
+        <item name="colorPrimary">@color/pink_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/pink_colorPrimaryDark</item>
+        <item name="colorAccent">@color/pink_colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_darpink" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_darkpink</item>
+        <item name="colorPrimary">@color/darkpink_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/darkpink_colorPrimary</item>
+        <item name="colorAccent">@color/darkpink_colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_violet" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_violet</item>
+        <item name="colorPrimary">@color/violet_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/violet_colorPrimaryDark</item>
+        <item name="colorAccent">@color/violet_colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_blue" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_blue</item>
+        <item name="colorPrimary">@color/blue_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/blue_colorPrimaryDark</item>
+        <item name="colorAccent">@color/blue_colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_skyblue" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_skyblue</item>
+        <item name="colorPrimary">@color/skyblue_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/skyblue_colorPrimaryDark</item>
+        <item name="colorAccent">@color/skyblue_colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme_green" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_green</item>
+        <item name="colorPrimary">@color/green_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/green_colorPrimaryDark</item>
+        <item name="colorAccent">@color/green_colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_grey" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_grey</item>
+        <item name="colorPrimary">@color/grey_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/grey_colorPrimaryDark</item>
+        <item name="colorAccent">@color/grey_colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme_brown" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_brown</item>
+        <item name="colorPrimary">@color/brown_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/brown_colorPrimaryDark</item>
+        <item name="colorAccent">@color/brown_colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_orange" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_orange</item>-->
+        <item name="colorPrimary">@color/orange_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/orange_colorPrimaryDark</item>
+        <item name="colorAccent">@color/orange_colorPrimary</item>
+    </style>
+
+    <!-- new theme -->
+
+    <style name="AppTheme_cyan" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_cyan</item>
+        <item name="colorPrimary">@color/cyan_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/cyan_colorPrimaryDark</item>
+        <item name="colorAccent">@color/cyan_colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_teal" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_teal</item>
+        <item name="colorPrimary">@color/teal_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/teal_colorPrimaryDark</item>
+        <item name="colorAccent">@color/teal_colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_deeporange" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_deeporange</item>
+        <item name="colorPrimary">@color/deeporange_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/deeporange_colorPrimaryDark</item>
+        <item name="colorAccent">@color/deeporange_colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_bluegrey" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_bluegrey</item>
+        <item name="colorPrimary">@color/bluegrey_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/bluegrey_colorPrimaryDark</item>
+        <item name="colorAccent">@color/bluegrey_colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_lightgreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_lightgreen</item>
+        <item name="colorPrimary">@color/lightgreen_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/lightgreen_colorPrimaryDark</item>
+        <item name="colorAccent">@color/lightgreen_colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_lime" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_lime</item>
+        <item name="colorPrimary">@color/lime_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/lime_colorPrimaryDark</item>
+        <item name="colorAccent">@color/lime_colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_yellow" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_yellow</item>-->
+        <item name="colorPrimary">@color/yellow_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/yellow_colorPrimaryDark</item>
+        <item name="colorAccent">@color/yellow_colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_amber" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_amber</item>-->
+        <item name="colorPrimary">@color/amber_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/amber_colorPrimaryDark</item>
+        <item name="colorAccent">@color/amber_colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_indigo" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:buttonStyle">@style/button_indigo</item>-->
+        <item name="colorPrimary">@color/indigo_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/indigo_colorPrimaryDark</item>
+        <item name="colorAccent">@color/indigo_colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

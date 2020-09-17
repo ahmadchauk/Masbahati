@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:weightSum="1">
+
+        <view
+            android:id="@+id/view2"
+            class="android.widget.Space"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.06" />
+
+        <TextView
+            android:id="@+id/counter_textView"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:autoLink="web"
+            android:background="@drawable/text_view_background"
+            android:gravity="center|center"
+            android:text="0"
+            android:textSize="32sp" />
+
+        <view
+            android:id="@+id/view3"
+            class="android.widget.Space"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_tasbih_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/reset_button"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="" />
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <Button
+            android:id="@+id/increment_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.62"
+            android:gravity="center_vertical|center_horizontal" />
+
+
+
+        <view
+            android:id="@+id/view5"
+            class="android.widget.Space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:mirrorForRtl="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/total_counter_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:gravity="right|center"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="142dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.2"
+                android:autoLink="web"
+                android:gravity="right|center"
+                android:fontFamily="@font/reem_kufi"
+                android:text="@string/counter_of_tasbih"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+</RelativeLayout>

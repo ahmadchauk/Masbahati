@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/img"
+            android:title="@string/app_home" />
+        <item
+            android:id="@+id/wered"
+            android:icon="@drawable/ic_exposure_plus_1"
+            android:title="@string/app_tasbih_wered" />
+        <item
+            android:id="@+id/azkar"
+            android:icon="@drawable/ic_view_list"
+            android:title="@string/app_azkar" />
+        <item
+            android:id="@+id/names"
+            android:icon="@drawable/allah"
+            android:title="@string/app_names" />
+        <item
+            android:id="@+id/reset"
+            android:icon="@drawable/ic_exposure_zero"
+            android:title="@string/app_reset" />
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_build_black_24dp"
+            android:title="@string/app_setting" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_info"
+            android:title="@string/app_about" />
+        <item
+            android:id="@+id/rate"
+            android:icon="@drawable/ic_star"
+            android:title="@string/app_rate" />
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_share_black_24dp"
+            android:title="@string/app_share" />
+    </group>
+
+<!--    <item android:title="@string/app_communicate">-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/share"-->
+<!--                android:icon="@drawable/ic_share_black_24dp"-->
+<!--                android:title="@string/app_share" />-->
+<!--        </menu>-->
+<!--    </item>-->
+
+</menu>

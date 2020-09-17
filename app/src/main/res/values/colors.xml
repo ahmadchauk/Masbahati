@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorShop">#9a1e1b</color>
+    <color name="colorShop2">#071f53</color>
+    <color name="colorNavBackground">#ffffff</color>
+    <color name="colorSettings">#40000000</color>
+    <color name="colorClick">#abcdef</color>
+    <color name="colorAbout">#000000</color>
+
+    <color name="red_colorPrimary">#ff0000</color>
+    <color name="red_colorPrimaryDark">#DF0000</color>
+    <color name="red_colorAccent">#F7F72D</color>
+
+    <color name="pink_colorPrimary">#e91e63</color>
+    <color name="pink_colorPrimaryDark">#CB1755</color>
+    <color name="pink_colorAccent">#2095f2</color>
+
+    <color name="darkpink_colorPrimary">#9b26af</color>
+    <color name="darkpink_colorPrimaryDark">#7a1ea1</color>
+    <color name="darkpink_colorAccent">#f34235</color>
+
+    <color name="violet_colorPrimary">#6639b6</color>
+    <color name="violet_colorPrimaryDark">#502ca7</color>
+    <color name="violet_colorAccent">#e81d62</color>
+
+    <color name="blue_colorPrimary">#3F51B5</color>
+    <color name="blue_colorPrimaryDark">#3445A2</color>
+    <color name="blue_colorAccent">#e81d62</color>
+
+    <color name="skyblue_colorPrimary">#03A9F4</color>
+    <color name="skyblue_colorPrimaryDark">#0094D7</color>
+    <color name="skyblue_colorAccent">#fec006</color>
+
+    <color name="green_colorPrimary">#4CAF50</color>
+    <color name="green_colorPrimaryDark">#419744</color>
+    <color name="green_colorAccent">#785447</color>
+
+    <color name="grey_colorPrimary">#9d9d9d</color>
+    <color name="grey_colorPrimaryDark">#606060</color>
+    <color name="grey_colorAccent">#f90</color>
+
+    <color name="brown_colorPrimary">#795548</color>
+    <color name="brown_colorPrimaryDark">#63453B</color>
+    <color name="brown_colorAccent">#e81d62</color>
+
+    <color name="black_colorPrimary">#000000</color>
+    <color name="black_colorPrimaryDark">#000000</color>
+    <color name="black_colorAccent">#ffffff</color>
+
+    <color name="orange_colorPrimary">#FF9800</color>
+    <color name="orange_colorPrimaryDark">#ff9200</color>
+    <color name="orange_colorAccent">#000000</color>
+
+    <!-- new theme -->
+
+    <color name="cyan_colorPrimary">#00BCD4</color>
+    <color name="cyan_colorPrimaryDark">#00b4d4</color>
+    <color name="cyan_colorAccent">#00BCD4</color>
+
+    <color name="teal_colorPrimary">#009688</color>
+    <color name="teal_colorPrimaryDark">#008b88</color>
+    <color name="teal_colorAccent">#009688</color>
+
+    <color name="lightgreen_colorPrimary">#8BC34A</color>
+    <color name="lightgreen_colorPrimaryDark">#73ae4a</color>
+    <color name="lightgreen_colorAccent">#8BC34A</color>
+
+    <color name="lime_colorPrimary">#CDDC39</color>
+    <color name="lime_colorPrimaryDark">#cdc439</color>
+    <color name="lime_colorAccent">#CDDC39</color>
+
+    <color name="yellow_colorPrimary">#FFEB3B</color>
+    <color name="yellow_colorPrimaryDark">#ffcf3b</color>
+    <color name="yellow_colorAccent">#FFEB3B</color>
+
+    <color name="amber_colorPrimary">#FFC107</color>
+    <color name="amber_colorPrimaryDark">#ffa707</color>
+    <color name="amber_colorAccent">#FFC107</color>
+
+    <color name="deeporange_colorPrimary">#FF5722</color>
+    <color name="deeporange_colorPrimaryDark">#ef5722</color>
+    <color name="deeporange_colorAccent">#FF5722</color>
+
+    <color name="bluegrey_colorPrimary">#607D8B</color>
+    <color name="bluegrey_colorPrimaryDark">#5d708b</color>
+    <color name="bluegrey_colorAccent">#607D8B</color>
+
+    <color name="indigo_colorPrimary">#2196F3</color>
+    <color name="indigo_colorPrimaryDark">#2182f3</color>
+    <color name="indigo_colorAccent">#607D8B</color>
+</resources>

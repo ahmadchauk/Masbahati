@@ -1,0 +1,55 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".activities.MainActivity"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="15sp"
+        android:hint="@string/title"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:textDirection="rtl"
+        />
+    <Spinner
+        android:id="@+id/spinner"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/dialog_positive_btn"
+            style="@android:style/Widget.Button"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="موافق"
+            android:textSize="16sp"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/dialog_negative_btn"
+            style="@android:style/Widget.Button"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:text="إلغاء"
+            android:background="@android:color/transparent"
+            android:textSize="16sp"
+            android:layout_marginEnd="3dp"
+             />
+    </LinearLayout>
+
+</LinearLayout>

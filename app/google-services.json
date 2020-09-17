@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "682018448398",
+    "firebase_url": "https://masbahati-c5f7e.firebaseio.com",
+    "project_id": "masbahati-c5f7e",
+    "storage_bucket": "masbahati-c5f7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682018448398:android:25181641f925889a4ec85f",
+        "android_client_info": {
+          "package_name": "com.chauk.masbahati"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682018448398-h47clrc1j8m09o7lhfvi29rmus72dkrk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chauk.masbahati",
+            "certificate_hash": "661984b022be2fac460d018f19175b9cdacc5461"
+          }
+        },
+        {
+          "client_id": "682018448398-qkfrggud38fdi6em9g58pckf0no7q3st.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9eSyU85Oyk1AKfYyMdM_ZfqypIAV6zfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "682018448398-qkfrggud38fdi6em9g58pckf0no7q3st.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-4733952857953754~8263318077"
+    }
+  ],
+  "configuration_version": "1"
+}
