@@ -32,8 +32,7 @@ public class ListOfAzkar extends AppCompatActivity {
     int appColor;
     JSONArray jsonArray;
 
-    RelativeLayout  layoutReference;
-    LinearLayout linearLayout;
+    LinearLayout  layoutReference, linearLayout;
     TextView repeatNumber, reference, zeker, currentZeker;
     public static int mCurrentZeker = 0;
     private int lengthOfZeker;
@@ -84,12 +83,13 @@ public class ListOfAzkar extends AppCompatActivity {
         reference = findViewById(R.id.reference);
         zeker = findViewById(R.id.zeker);
         linearLayout = findViewById(R.id.navigation);
-        layoutReference = findViewById(R.id.ref);
+        layoutReference = findViewById(R.id.reference_layout);
         currentZeker = findViewById(R.id.current_zeker);
         zoomIn = findViewById(R.id.zoomIn);
         zoomOut = findViewById(R.id.zoomOut);
         seekBar = findViewById(R.id.seekBar);
         seekBar.setMax(40);
+        seekBar.setProgress(25);
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -128,6 +128,9 @@ public class ListOfAzkar extends AppCompatActivity {
         try {
             JSONObject data = jsonArray.getJSONObject(position);
 
+            if(!data.getString("count").equals("") || !data.getString("reference").equals("") ){
+                layoutReference.setVisibility(View.VISIBLE);
+            }
             if (!data.getString("count").equals("")) {
                 int number = Integer.parseInt(data.optString("count"));
                 String text = String.valueOf(number);
