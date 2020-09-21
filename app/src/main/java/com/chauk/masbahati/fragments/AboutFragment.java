@@ -49,6 +49,7 @@ import java.util.Objects;
 public class AboutFragment extends Fragment implements View.OnClickListener {
 
     private ImageButton checkForUpdate;
+
     public AboutFragment() {
         // Required empty public constructor
     }
@@ -82,18 +83,18 @@ public class AboutFragment extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         int id = view.getId();
         if (id == R.id.check_update) {
-            if(Methods.isNetworkAvailable(Objects.requireNonNull(AboutFragment.this.getActivity()))){
+            if (Methods.isNetworkAvailable(Objects.requireNonNull(AboutFragment.this.getActivity()))) {
                 GetVersionCode getVersionCode = new GetVersionCode(getActivity(), Methods.getVersion(getContext()));
                 getVersionCode.execute();
-            }else{
-                Snackbar snackbar = Snackbar.make(getActivity().findViewById(R.id.drawer_layout),R.string.app_connectivity,Snackbar.LENGTH_LONG)
+            } else {
+                Snackbar snackbar = Snackbar.make(getActivity().findViewById(R.id.drawer_layout), R.string.app_connectivity, Snackbar.LENGTH_LONG)
                         .setAction("المحاولة مجددا", new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
                                 checkForUpdate.callOnClick();
                             }
                         });
-                ViewCompat.setLayoutDirection(snackbar.getView(),ViewCompat.LAYOUT_DIRECTION_RTL);
+                ViewCompat.setLayoutDirection(snackbar.getView(), ViewCompat.LAYOUT_DIRECTION_RTL);
                 snackbar.show();
             }
 
@@ -208,37 +209,38 @@ class GetVersionCode extends AsyncTask<Void, String, String> {
                 });
 
                 alertDialog.show();
+
+
+            } else {
+                //show anything
+                AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                builder.setCancelable(false);
+                builder.setMessage("لديك بالفعل آخر نسخة من التطبيق");
+                builder.setPositiveButton("موافق", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                    }
+                });
+                final AlertDialog alertDialog = builder.create();
+                alertDialog.setOnShowListener(new DialogInterface.OnShowListener() {
+                    @Override
+                    public void onShow(DialogInterface dlg) {
+                        try {
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                                alertDialog.getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_RTL); // set title and message direction to RTL
+                            }
+
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                });
+
+                alertDialog.show();
             }
 
-        } else {
-            //show anything
-            AlertDialog.Builder builder = new AlertDialog.Builder(context);
-            builder.setCancelable(false);
-            builder.setMessage("لديك بالفعل آخر نسخة من التطبيق");
-            builder.setPositiveButton("موافق", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-                }
-            });
-            final AlertDialog alertDialog = builder.create();
-            alertDialog.setOnShowListener(new DialogInterface.OnShowListener() {
-                @Override
-                public void onShow(DialogInterface dlg) {
-                    try {
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-                            alertDialog.getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_RTL); // set title and message direction to RTL
-                        }
+            Log.d("update", "Current version " + currentVersion + " playstore version " + onlineVersion);
 
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
-
-            alertDialog.show();
         }
-
-        Log.d("update", "Current version " + currentVersion + " playstore version " + onlineVersion);
-
     }
 }
